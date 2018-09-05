@@ -7,6 +7,7 @@
 @prefix mim: <http://bp4mc2.org/def/mim#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 
 #
 # Classes
@@ -419,6 +420,9 @@ mim:Aggregatietypen a mim:Enumeratie;
   mim:waarde mim:None;
   mim:waarde mim:Composite;
   mim:waarde mim:Aggregate;
+  skos:member mim:None;
+  skos:member mim:Composite;
+  skos:member mim:Aggregate;
 .
 mim:None a mim:Enumeratiewaarde;
   rdfs:label "None"@nl;

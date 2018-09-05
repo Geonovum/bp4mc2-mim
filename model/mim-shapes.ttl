@@ -12,6 +12,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 
 #
 # NodeShapes
@@ -517,12 +518,13 @@ shape:typeAggregatie a sh:PropertyShape;
   sh:name "mim:typeAggregatie";
   sh:minCount 1;
   sh:maxCount 1;
-  sh:node [
-    sh:name "Aggregatietypen";
-    sh:property [
-      sh:path [sh:inversePath mim:waarde];
-      sh:hasValue mim:Aggregatietypen;
-    ]
+  sh:node shape:Aggregatietypen;
+.
+shape:Aggregatietypen a sh:NodeShape;
+  sh:name "Aggregatietypen";
+  sh:property [
+    sh:path [sh:inversePath skos:member];
+    sh:hasValue mim:Aggregatietypen;
   ]
 .
 shape:code a sh:PropertyShape;
