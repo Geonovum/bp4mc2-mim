@@ -197,7 +197,7 @@ mim:datumOpname a owl:DatatypeProperty;
   rdfs:comment "De datum waarop de union is opgenomen in het informatiemodel."@nl;
 .
 mim:herkomst a owl:DatatypeProperty;
-  rdfs:label "definitie"@nl;
+  rdfs:label "herkomst"@nl;
   rdfs:comment "De registratie in wiens catalogus het objecttype is gespecificeerd (oftewel de registratie waar het objecttype deel van uitmaakt). Deze specificatie is toegevoegd omdat het wel duidelijk moet zijn in welke (basis)registratie of informatiemodel het objecttype voorkomt (indien van toepassing)."@nl;
   rdfs:comment "De registratie of het informatiemodel waaraan de attribuutsoort ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is."@nl;
   rdfs:comment "De registratie of het informatiemodel waaraan het gegevensgroep ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is."@nl;
